@@ -3,38 +3,42 @@ import React from 'react';
 // import { SliderData } from './SliderData';
 // import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import '../css/photo.css'
+import {Link} from "react-router-dom";
+
 const Photos = () => {
 
   return (
     <div className='mainphoto'>
       <h2>Some photos</h2>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <div id="photoslider" className="carousel slide" data-ride="carousel">
+  <ol className="carousel-indicators">
+    <li data-target="#photoslider" data-slide-to="0" className="active"></li>
+    <li data-target="#photoslider" data-slide-to="1"></li>
+    <li data-target="#photoslider" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2020/05/19/file741k0ojtu7aehkidmzv-1144509568-1549945904.jpg?itok=B3lCJ0X4" alt="First slide"/>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img className="d-block w-100" src="https://raw.githubusercontent.com/YashDeshmukh2610/Shivjayanti/master/main/WhatsApp%20Image%202022-03-18%20at%202.22.10%20PM.jpeg"/>
     </div>
     
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.tv9marathi.com/wp-content/uploads/2022/02/19231909/chandrapur-shivjayanti.jpg"/>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://raw.githubusercontent.com/YashDeshmukh2610/Shivjayanti/master/main/WhatsApp%20Image%202022-03-18%20at%202.25.02%20PM.jpeg"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://static.toiimg.com/photo/62996111.cms"/>
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://static.toiimg.com/photo/62996111.cms"/>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <Link className="carousel-control-prev" to="#photoslider" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
+  </Link>
+  <Link className="carousel-control-next" to="#photoslider" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
+  </Link>
 </div>
+
+<Link className='more' to="/gallery">More photos</Link>
     </div>
 
   );

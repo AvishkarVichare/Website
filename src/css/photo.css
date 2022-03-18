@@ -95,7 +95,27 @@
 
 
 .mainphoto{
-  /* margin: 30px; */
-background-color: antiquewhite;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
 padding: 10px;
+border: 5px solid goldenrod;
+border-radius: 30px;
+}
+
+.more{
+  margin-top: 20px;
+  border: 5px solid wheat;
+  background-color: orange;
+  border-radius: 50%;
+  padding: 15px;
+  color: wheat;
+text-decoration: none;
+}
+
+.more:hover{
+   background-color: wheat;
+   color: orange;
 }

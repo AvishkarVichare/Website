@@ -20,6 +20,9 @@ h2{
 align-items: center; */
 background-color: antiquewhite;
 padding: 10px;
+border: 5px solid goldenrod;
+border-radius: 30px; 
+margin: 30px;
 }
 
 .player-wrapper{
