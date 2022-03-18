@@ -10,9 +10,9 @@ const Videos = () => {
  <div className='videos'>
  <div className="player-wrapper">
     <ReactPlayer
-      url="https://www.youtube.com/embed/Ipzhll9ymjo"
+      url="https://www.youtube.com/watch?v=fT5K9LfNyhc"
       className="react-player"
-      playing
+      
       width="100%"
       height="100%"
       controls={false}
@@ -22,7 +22,7 @@ const Videos = () => {
     <ReactPlayer
       url="https://www.youtube.com/embed/Ipzhll9ymjo"
       className="react-player"
-      playing
+      
       width="100%"
       height="100%"
       controls={false}
@@ -32,7 +32,7 @@ const Videos = () => {
     <ReactPlayer
       url="https://www.youtube.com/embed/Ipzhll9ymjo"
       className="react-player"
-      playing
+      
       width="100%"
       height="100%"
       controls={false}
@@ -42,7 +42,6 @@ const Videos = () => {
 
  </div>
     <a href="">Watch more videos on Our YouTube Channel</a>
- 
 </div>
   
   )
