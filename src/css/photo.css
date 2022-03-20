@@ -2,6 +2,7 @@
 
 /* Slideshow container */
 .slideshow-container {
+  box-sizing: border-box;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -119,3 +120,4 @@ text-decoration: none;
    background-color: wheat;
    color: orange;
 }
+

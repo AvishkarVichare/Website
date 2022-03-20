@@ -1,22 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&display=swap');
 
 
+.mainBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h6{
+    color:#fada01;
+    /* padding: 10px; */
+    /* margin: 0   ; */
+    text-align: center;
+    font-size: smaller;
+    text-shadow: 2px 2px black;
+
+}
+
 h1{
     font-family: 'Poppins', sans-serif; 
+    background: -webkit-linear-gradient(rgb(88, 2, 68), rgb(150, 5, 94));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 72px; */
+    padding: 20px;
+    text-align: center;
 
+
+}
+
+.left{
+    margin: 10px;
+    float: left;
+    color:#fada01;
+    text-shadow: 2px 2px black;
+}
+.right{
+    margin: 10px;
+    color:#fada01;
+    text-shadow: 2px 2px black;
+    float: right;
 }
 
 header{
+    /* padding: 50px; */
     background-color:rgb(255, 102, 0);
+   flex-wrap: wrap;
     height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
+    /* display:flex; */
+  
+    /* flex-direction: column; */
     border-bottom: 2px solid goldenrod;
 }
 
+
+
 header img{
+    /* text-align: center; */
 height: 80px;
 border-radius: 50%;
 border: 2px solid goldenrod;
@@ -40,4 +81,13 @@ nav li a{
 }
 nav li a:hover{
     color:orange;
+}
+
+@media only screen and (max-width: 370px) {
+
+    nav li a{
+        padding-left: 0%;
+        padding-right: 0%;
+        /* margin-left: 0%; */
+    }
 }
